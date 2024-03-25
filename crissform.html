@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="crissform.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+                Crissa's Survey Form
+            </h1>
+            <p id="description">
+                Thank you for taking the time to answer this survey
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <div class="form-group">
+                <label for="name">What's your Name?</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">How old are you?</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >How old are you?</option>
+                    <option value="">15-20</option>
+                    <option value="">21-25</option>
+                    <option value="">26-30</option>
+                    <option value="">31-35</option>
+                    <option value="">36-40</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Contact Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >What is your current state in school?</option>
+                    <option value="">Chill lang</option>
+                    <option value="">Oks lang</option>
+                    <option value="">Kaya pa</option>
+                    <option value="">Stressed na</option>
+                    <option value="">Nagsisisi na</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">How do you handle your stress?</p>
+                <label for="">
+                    <input type="radio" name="source" value="playing"
+                    class="inputRadio"
+                    checked> Playing Games
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="movies"
+                    class="inputRadio"
+                    > Watching Movies
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="social-media"
+                    class="inputRadio"
+                    > Scrolling Social Media
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="stress-eating"
+                    class="inputRadio"
+                    > Stress Eating
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="listening-music"
+                    class="inputRadio"
+                    > Listening to Music
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">What's your current major?</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="web-technologies"> Web Technologies
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="net-sec"> Network and Security
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="com-sci">  Computer Science
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="dat-ana"> Data Analytics
+                </label>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p id="quest">How's my survey experience?</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
